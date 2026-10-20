@@ -1,0 +1,17 @@
+instance,solver,status,makespan,runtime_seconds
+ft06,Gurobi,2,55.0,0.0361
+ft06,Z3,sat,55,0.0441
+ft10,Gurobi,2,930.0,6.4151
+ft10,Z3,sat,930,28.3073
+la01,Gurobi,2,665.9999999332965,0.138
+la01,Z3,sat,666,0.889
+la05,Gurobi,2,592.9999999405501,0.2864
+la05,Z3,sat,593,5.8442
+la05,Gurobi,2,592.9999999405502,1.0566
+la05,Z3,sat,593,13.2105
+la02,Gurobi,2,655.0,3.3694
+la02,Z3,sat,655,6.7823
+la03,Gurobi,2,597.0,3.0961
+la03,Z3,sat,597,2.3209
+la04,Gurobi,2,590.0,3.0663
+la04,Z3,sat,590,2.6245

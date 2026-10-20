@@ -1,0 +1,57 @@
+from,to,path,distance_m,travel_time_s
+warehouse,M1,warehouse -> j1 -> M5 -> j5 -> j4 -> M1,90,18.0
+warehouse,M2,warehouse -> j1 -> M5 -> j5 -> M2,70,14.0
+warehouse,M3,warehouse -> j1 -> j13 -> M3,142,28.4
+warehouse,M4,warehouse -> j1 -> j2 -> M4,64,12.8
+warehouse,M5,warehouse -> j1 -> M5,28,5.6
+warehouse,M6,warehouse -> j1 -> M5 -> j5 -> j4 -> M1 -> j9 -> j8 -> M6,155,31.0
+warehouse,delivery,warehouse -> j1 -> M5 -> j5 -> j4 -> M1 -> j9 -> j11 -> delivery,161,32.2
+M1,warehouse,M1 -> j4 -> j3 -> j2 -> j1 -> warehouse,90,18.0
+M1,M2,M1 -> j6 -> M2,54,10.8
+M1,M3,M1 -> j6 -> j10 -> M3,52,10.4
+M1,M4,M1 -> j7 -> M4,64,12.8
+M1,M5,M1 -> j4 -> j3 -> M5,62,12.4
+M1,M6,M1 -> j9 -> j8 -> M6,65,13.0
+M1,delivery,M1 -> j9 -> j11 -> delivery,71,14.2
+M2,warehouse,M2 -> j5 -> M5 -> j1 -> warehouse,70,14.0
+M2,M1,M2 -> j6 -> M1,54,10.8
+M2,M3,M2 -> j13 -> M3,72,14.4
+M2,M4,M2 -> j5 -> j4 -> M1 -> j7 -> M4,118,23.6
+M2,M5,M2 -> j5 -> M5,42,8.4
+M2,M6,M2 -> j6 -> j10 -> j9 -> j8 -> M6,119,23.8
+M2,delivery,M2 -> j6 -> j10 -> j11 -> delivery,91,18.2
+M3,warehouse,M3 -> j13 -> j1 -> warehouse,142,28.4
+M3,M1,M3 -> j10 -> j6 -> M1,52,10.4
+M3,M2,M3 -> j13 -> M2,72,14.4
+M3,M4,M3 -> j10 -> j6 -> M1 -> j7 -> M4,116,23.2
+M3,M5,M3 -> j10 -> j6 -> M2 -> j5 -> M5,114,22.8
+M3,M6,M3 -> j10 -> j9 -> j8 -> M6,81,16.2
+M3,delivery,M3 -> j12 -> j11 -> delivery,53,10.6
+M4,warehouse,M4 -> j2 -> j1 -> warehouse,64,12.8
+M4,M1,M4 -> j7 -> M1,64,12.8
+M4,M2,M4 -> j7 -> M1 -> j6 -> M2,118,23.6
+M4,M3,M4 -> j7 -> M1 -> j6 -> j10 -> M3,116,23.2
+M4,M5,M4 -> j2 -> j3 -> M5,78,15.6
+M4,M6,M4 -> j7 -> j8 -> M6,91,18.2
+M4,delivery,M4 -> j7 -> j8 -> j9 -> j11 -> delivery,135,27.0
+M5,warehouse,M5 -> j1 -> warehouse,28,5.6
+M5,M1,M5 -> j5 -> j4 -> M1,62,12.4
+M5,M2,M5 -> j5 -> M2,42,8.4
+M5,M3,M5 -> j5 -> M2 -> j13 -> M3,114,22.8
+M5,M4,M5 -> j3 -> j2 -> M4,78,15.6
+M5,M6,M5 -> j5 -> j4 -> M1 -> j9 -> j8 -> M6,127,25.4
+M5,delivery,M5 -> j5 -> j4 -> M1 -> j9 -> j11 -> delivery,133,26.6
+M6,warehouse,M6 -> j8 -> j7 -> M4 -> j2 -> j1 -> warehouse,155,31.0
+M6,M1,M6 -> j8 -> j7 -> M1,65,13.0
+M6,M2,M6 -> j8 -> j9 -> M1 -> j6 -> M2,119,23.8
+M6,M3,M6 -> j8 -> j9 -> j10 -> M3,81,16.2
+M6,M4,M6 -> j8 -> j7 -> M4,91,18.2
+M6,M5,M6 -> j8 -> j7 -> M1 -> j4 -> j3 -> M5,127,25.4
+M6,delivery,M6 -> j8 -> j9 -> j11 -> delivery,100,20.0
+delivery,warehouse,delivery -> j11 -> j10 -> j6 -> M1 -> j4 -> j3 -> j2 -> j1 -> warehouse,161,32.2
+delivery,M1,delivery -> j11 -> j10 -> j6 -> M1,71,14.2
+delivery,M2,delivery -> j11 -> j10 -> j6 -> M2,91,18.2
+delivery,M3,delivery -> j11 -> j10 -> M3,53,10.6
+delivery,M4,delivery -> j11 -> j10 -> j6 -> M1 -> j7 -> M4,135,27.0
+delivery,M5,delivery -> j11 -> j10 -> j6 -> M2 -> j5 -> M5,133,26.6
+delivery,M6,delivery -> j11 -> j9 -> j8 -> M6,100,20.0
